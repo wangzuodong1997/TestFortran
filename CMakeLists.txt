@@ -4,16 +4,10 @@ MESSAGE(STATUS "")
 # Cmake minimum version
 cmake_minimum_required(VERSION 3.5)
 
-set (MKLROOT "C:/Program Files (x86)/Intel/oneAPI/mkl/latest")
 message(STATUS "MKLROOT: " ${MKLROOT})
 
-# Enable Fortran
-set(CMAKE_Fortran_COMPILER "C:/Program Files (x86)/Intel/oneAPI/compiler/2023.0.0/windows/bin/intel64/ifort.exe")
-enable_language(Fortran)
-
-
 # Project name and version
-project(stokes)
+project(stokes LANGUAGES Fortran C)
 
 if(CMAKE_Fortran_COMPILER_ID MATCHES "GNU")
     set(dialect "-ffree-form -std=f2008")
@@ -69,6 +63,7 @@ add_executable(a.exe
 
 # find Intel MKL
 #set(BLA_VENDOR Intel10_64lp_seq)
+find_package(MKL CONFIG REQUIRED)
 find_package(LAPACK REQUIRED)
 find_package(BLAS REQUIRED)
 
