@@ -1,0 +1,5 @@
+gfortran pardiso_sym.f -o a.exe -L /home/guermond/PARDISO_TEST/LOCAL -lpardiso600-GNU800-X86-64 -L/usr/lib/x86_64-linux-gnu -lblas -llapack -fopenmp -lpthread -lm
+
+
+
+gfortran pardiso_sym.f -fcheck=all -o a.exe -L /home/guermond/PARDISO_TEST/LOCAL -lpardiso600-GNU800-X86-64 -L/usr/lib/x86_64-linux-gnu -lblas -llapack -fopenmp -lpthread -lm -lgfortran
