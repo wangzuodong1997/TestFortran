@@ -1,0 +1,6 @@
+/home/zuwang/TestFortran/BUILD/CMakeFiles/debug.dir
+/home/zuwang/TestFortran/BUILD/CMakeFiles/release.dir
+/home/zuwang/TestFortran/BUILD/CMakeFiles/native.dir
+/home/zuwang/TestFortran/BUILD/CMakeFiles/a.exe.dir
+/home/zuwang/TestFortran/BUILD/CMakeFiles/edit_cache.dir
+/home/zuwang/TestFortran/BUILD/CMakeFiles/rebuild_cache.dir
